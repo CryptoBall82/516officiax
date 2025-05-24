@@ -1,17 +1,27 @@
 
 // src/app/page.tsx
 import { Button } from "@/components/ui/button";
-import { Logo } from "@/components/layout/logo";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ShieldCheck, Bot, CalendarDays, Briefcase } from "lucide-react";
+import oxImage from './assets/OX lett white175F.png'; // Import the logo image
 
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-background to-primary/20 text-foreground">
       <header className="sticky top-0 z-40 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Logo iconColorClassName="text-accent" textColorClassName="text-foreground" />
+          <Link href="/" className="flex items-center">
+            <Image
+              src={oxImage}
+              alt="OfficiaX Logo"
+              data-ai-hint="logo company"
+              height={40} // Adjusted height for header
+              width={140} // Adjusted width based on aspect ratio of 175F in filename, assuming 175x50 or similar
+              style={{ height: '40px', width: 'auto' }} // Ensure responsive scaling
+              priority
+            />
+          </Link>
           <nav className="flex items-center gap-4">
             <Button variant="ghost" asChild className="text-foreground hover:bg-accent/10 hover:text-accent">
               <Link href="/login">Login</Link>
