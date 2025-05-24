@@ -8,7 +8,7 @@ import { NavbarSchedule } from '@/components/NavbarSchedule';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image'; 
-
+import scheduleImage from '../../app/assets/calendary225.png';
 // Inline SVG for Google Logo
 const GoogleLogoIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="50px" height="50px"> {/* Updated size */}
@@ -59,7 +59,7 @@ export default function Schedule() {
 
           {/* Image Display */}
           <Image
-            src="https://placehold.co/191x175.png" 
+            src={scheduleImage} 
             alt="Calendar icon for Schedule page"
             data-ai-hint="calendar schedule"
             width={191}
