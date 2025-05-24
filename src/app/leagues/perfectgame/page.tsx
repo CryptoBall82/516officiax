@@ -8,7 +8,7 @@ import Image from 'next/image'; // Import Image component
 
 export default function PerfectGamePage() {
   // Use the /preview URL for Google Drive for better embed compatibility
-  const documentUrl = "https://drive.google.com/file/d/154fDNmVovM1G1Z3775U4VhXIssjwVuVa/preview";
+  const documentUrl = "https://docs.google.com/document/d/1xcZGZXt41UfbQdcyVVYyS_emO5dtsVrv/view";
   // Removed pgLogoUrl
 
   return (

@@ -7,7 +7,7 @@ import { NavbarLeagues } from '@/components/NavbarLeagues';
 
 export default function TlTravelRulesPage() {
   // Use the /preview URL for Google Drive for better embed compatibility
-  const documentUrl = "https://drive.google.com/file/d/14UkjX_9B45IlSosd1mQsTeqzpClg9Bb2/preview";
+  const documentUrl = "https://docs.google.com/document/d/1vINbr68j2cUah830nDrAcoDdFKFisGh7/view";
 
   return (
     <div className="flex flex-col h-screen items-center mx-auto max-w-[500px]">

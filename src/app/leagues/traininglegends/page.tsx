@@ -54,6 +54,7 @@ export default function TrainingLegendsPage() {
                 left: '50%',
                 transform: 'translateX(-50%)',
               }}
+              priority
               onError={(e: any) => {
                 e.currentTarget.onerror = null;
                 e.currentTarget.src = 'https://picsum.photos/295/175'; // Fallback with new dimensions

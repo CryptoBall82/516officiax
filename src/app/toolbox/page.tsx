@@ -1,4 +1,3 @@
-
 // src/app/toolbox/page.tsx
 "use client";
 
@@ -94,7 +93,7 @@ export default function ToolboxPage() {
                     {buttonInfo.icon}
                   </div>
                   <span
-                    className="text-black font-semibold text-xs text-center w-full px-1 truncate absolute bottom-1"
+                    className={`text-black font-semibold text-center w-full px-1 truncate absolute bottom-1 ${buttonInfo.name === 'Weather' || buttonInfo.name === 'Coin Toss' ? 'text-base' : 'text-sm'}`}
                   >
                     {buttonInfo.name}
                   </span>
@@ -108,4 +107,3 @@ export default function ToolboxPage() {
     </div>
   );
 }
-
