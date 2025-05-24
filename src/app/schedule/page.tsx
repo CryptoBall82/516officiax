@@ -8,8 +8,6 @@ import { NavbarSchedule } from '@/components/NavbarSchedule';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image'; 
-import scheduleImage from '../../app/assets/calendary225.png'; // Your image import
-// Import the Next.js Image component
 
 // Inline SVG for Google Logo
 const GoogleLogoIcon = () => (
@@ -44,25 +42,33 @@ export default function Schedule() {
   return (
     <div className="flex flex-col h-screen items-center mx-auto max-w-[500px]">
       <DefaultHeader />
-      <div className="flex-grow relative w-full pt-[75px] pb-[75px]"> {/* Added padding for header/navbar */}
-        {/* Container for Image and Text */}
-        <div className="flex flex-col items-center pt-8"> {/* Added padding top for spacing */}
+      <div className="flex-grow relative w-full"> {/* Removed pt and pb */}
+        
+        <div className="flex justify-center relative">
           {/* Schedule Text */}
           <span
-            className="font-bold text-3xl text-foreground mb-4" // Margin bottom for spacing, changed text-black to text-foreground
+            className="absolute font-bold text-3xl text-foreground"
+            style={{
+                top: '90px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+             }}
           >
             Schedule
           </span>
 
           {/* Image Display */}
           <Image
-            src={scheduleImage} // Using placeholder image
+            src="https://placehold.co/191x175.png" 
             alt="Calendar icon for Schedule page"
             data-ai-hint="calendar schedule"
             width={191}
             height={175}
-            className="mb-8"
             style={{
+              position: 'absolute',
+              top: '130px', 
+              left: '50%',
+              transform: 'translateX(-50%)',
               width: 'auto',
               height: '175px'
             }}
@@ -70,11 +76,11 @@ export default function Schedule() {
             />
         </div>
 
-        {/* Buttons Container - Centered */}
-        <div className="flex flex-col items-center justify-center">
+        {/* Buttons Container - Centered and positioned from bottom */}
+        <div className="absolute bottom-[90px] left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-4 w-full px-4">
           {/* Google Calendar Button */}
           <Button
-            className="w-[225px] h-[80px] bg-white text-black border-2 border-[rgba(204,0,0,1)] hover:bg-gray-100 rounded-md shadow-[0_0_8px_4px_rgba(0,0,0,.5)] hover:scale-105 transition-transform relative mb-8 font-bold flex items-center px-4 space-x-3"
+            className="w-[225px] h-[80px] bg-white text-black border-2 border-[rgba(204,0,0,1)] hover:bg-gray-100 rounded-md shadow-[0_0_8px_4px_rgba(0,0,0,.5)] hover:scale-105 transition-transform relative font-bold flex items-center px-4 space-x-3"
             onClick={navigateToGoogleCalendar}
           >
             <GoogleLogoIcon />
