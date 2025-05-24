@@ -7,8 +7,8 @@ import { DefaultHeader } from '@/components/DefaultHeader';
 import { NavbarTools } from '@/components/NavbarTools';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import toolboxImage from '../assets/tool225.png';
-import coinTossImage from '../assets/coin-toss3.png'; // Local image for coin toss
+import toolboxImage from '../../app/assets/tool225.png';
+import coinTossImage from '../../app/assets/coin-toss3.png'; // Local image for coin toss
 
 import ThunderstormOutlinedIcon from '@mui/icons-material/ThunderstormOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
@@ -25,9 +25,9 @@ export default function ToolboxPage() {
   const router = useRouter();
 
   const toolButtons: ToolButtonInfo[] = [
-    { name: 'Weather Center', path: '/toolbox/weather', icon: <ThunderstormOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
+    { name: 'Weather', path: '/toolbox/weather', icon: <ThunderstormOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
     { name: 'Coin Toss', path: '/toolbox/cointoss', icon: <Image src={coinTossImage} alt="Coin Toss" width={36} height={36} data-ai-hint="coin game" /> },
-    { name: 'Umpire Classroom', path: '/toolbox/umpireclassroom', icon: <SchoolOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
+    { name: 'Ump Classroom', path: '/toolbox/umpireclassroom', icon: <SchoolOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
     { name: 'Assignor Info', path: '/toolbox/officialroster', icon: <BusinessCenterOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
   ];
 
@@ -108,3 +108,4 @@ export default function ToolboxPage() {
     </div>
   );
 }
+
