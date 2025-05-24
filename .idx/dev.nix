@@ -15,7 +15,7 @@
   # a firebase.json file is written into the user's directory
   services.firebase.emulators = {
     detect = true;
-    projectId = "demo-app";
+    projectId = "officiax-516";
     services = ["auth" "firestore"];
   };
   idx = {
