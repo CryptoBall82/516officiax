@@ -14,6 +14,13 @@ import ThunderstormOutlinedIcon from '@mui/icons-material/ThunderstormOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
 
+import toolboxImage from '../assets/tool225.png';
+import coinTossImage from '../assets/coin-toss3.png'; // Local image for coin toss
+
+import ThunderstormOutlinedIcon from '@mui/icons-material/ThunderstormOutlined';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
+
 
 interface ToolButtonInfo {
   name: string;
