@@ -28,7 +28,7 @@ export default function ToolboxPage() {
     { name: 'Weather', path: '/toolbox/weather', icon: <ThunderstormOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
     { name: 'Coin Toss', path: '/toolbox/cointoss', icon: <Image src={coinTossImage} alt="Coin Toss" width={36} height={36} data-ai-hint="coin game" /> },
     { name: 'Ump Classroom', path: '/toolbox/umpireclassroom', icon: <SchoolOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
-    { name: 'Assignor Info', path: '/toolbox/officialroster', icon: <BusinessCenterOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
+    { name: 'Assignor Info', path: '/toolbox/assignor-information', icon: <BusinessCenterOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
   ];
 
   const handleToolClick = (path: string) => {
@@ -108,4 +108,3 @@ export default function ToolboxPage() {
     </div>
   );
 }
-

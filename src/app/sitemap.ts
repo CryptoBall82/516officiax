@@ -29,9 +29,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/signup',
     '/toolbox',
     '/toolbox/cointoss',
-    '/toolbox/officialroster',
-    '/toolbox/officialroster/handbook',
-    '/toolbox/officialroster/roster-doc',
+    '/toolbox/assignor-information',
+    '/toolbox/assignor-information/handbook',
+    '/toolbox/assignor-information/roster-doc',
     '/toolbox/umpireclassroom',
     '/toolbox/weather',
   ];
