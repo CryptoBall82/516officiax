@@ -7,22 +7,26 @@ import { NavbarTools } from '@/components/NavbarTools';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import toolboxImage from '../../app/assets/tool225.png';
-import { CloudSun, Coins, GraduationCap, BriefcaseBusiness, type LucideIcon } from 'lucide-react';
+import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
+import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
+import type { ReactElement, ElementType } from 'react';
 
 interface ToolButtonInfo {
   name: string;
   path: string;
-  icon: LucideIcon;
+  icon: ElementType; // Changed from LucideIcon to ElementType for MUI
 }
 
 export default function ToolboxPage() {
   const router = useRouter();
 
   const toolButtons: ToolButtonInfo[] = [
-    { name: 'Weather Center', path: '/toolbox/weather', icon: CloudSun },
-    { name: 'Coin Toss', path: '/toolbox/cointoss', icon: Coins },
-    { name: 'Umpire Classroom', path: '/toolbox/umpireclassroom', icon: GraduationCap },
-    { name: 'Assignor Info', path: '/toolbox/officialroster', icon: BriefcaseBusiness },
+    { name: 'Weather Center', path: '/toolbox/weather', icon: WbSunnyOutlinedIcon },
+    { name: 'Coin Toss', path: '/toolbox/cointoss', icon: MonetizationOnOutlinedIcon },
+    { name: 'Umpire Classroom', path: '/toolbox/umpireclassroom', icon: SchoolOutlinedIcon },
+    { name: 'Assignor Info', path: '/toolbox/officialroster', icon: BusinessCenterOutlinedIcon },
   ];
 
   const handleToolClick = (path: string) => {
@@ -85,7 +89,7 @@ export default function ToolboxPage() {
                     flex flex-col items-center justify-center p-1
                   "
                 >
-                  <IconComponent className="h-9 w-9 text-black mb-1" />
+                  <IconComponent sx={{ fontSize: '36px', color: 'black', marginBottom: '4px' }} />
                   <span
                     className="text-black font-semibold text-xs text-center w-full px-1 truncate absolute bottom-1"
                   >
