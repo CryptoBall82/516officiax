@@ -7,23 +7,28 @@ import { DefaultHeader } from '@/components/DefaultHeader';
 import { NavbarTools } from '@/components/NavbarTools';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import toolboxImage from '../../app/assets/tool225.png';
-import { CloudSun, Coins, GraduationCap, BriefcaseBusiness, type LucideIcon } from 'lucide-react';
+import toolboxImage from '../assets/tool225.png';
+import coinTossImage from '../assets/coin-toss3.png'; // Local image for coin toss
+
+import ThunderstormOutlinedIcon from '@mui/icons-material/ThunderstormOutlined';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
+
 
 interface ToolButtonInfo {
   name: string;
   path: string;
-  icon: LucideIcon;
+  icon: React.ReactNode; // Changed to React.ReactNode to accommodate MUI icons and Image components
 }
 
 export default function ToolboxPage() {
   const router = useRouter();
 
   const toolButtons: ToolButtonInfo[] = [
-    { name: 'Weather Center', path: '/toolbox/weather', icon: CloudSun },
-    { name: 'Coin Toss', path: '/toolbox/cointoss', icon: Coins },
-    { name: 'Umpire Classroom', path: '/toolbox/umpireclassroom', icon: GraduationCap },
-    { name: 'Assignor Info', path: '/toolbox/officialroster', icon: BriefcaseBusiness },
+    { name: 'Weather Center', path: '/toolbox/weather', icon: <ThunderstormOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
+    { name: 'Coin Toss', path: '/toolbox/cointoss', icon: <Image src={coinTossImage} alt="Coin Toss" width={36} height={36} data-ai-hint="coin game" /> },
+    { name: 'Umpire Classroom', path: '/toolbox/umpireclassroom', icon: <SchoolOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
+    { name: 'Assignor Info', path: '/toolbox/officialroster', icon: <BusinessCenterOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
   ];
 
   const handleToolClick = (path: string) => {
@@ -72,7 +77,6 @@ export default function ToolboxPage() {
         <div className="absolute bottom-[90px] left-0 right-0 flex justify-center">
           <div className="grid grid-cols-2 gap-y-[25px] gap-x-[25px] p-4">
             {toolButtons.map((buttonInfo) => {
-              const IconComponent = buttonInfo.icon;
               return (
                 <button
                   key={buttonInfo.name}
@@ -86,7 +90,9 @@ export default function ToolboxPage() {
                     flex flex-col items-center justify-center p-1
                   "
                 >
-                  <IconComponent className="h-9 w-9 mb-1 text-black" />
+                  <div className="flex items-center justify-center h-9 w-9 mb-1">
+                    {buttonInfo.icon}
+                  </div>
                   <span
                     className="text-black font-semibold text-xs text-center w-full px-1 truncate absolute bottom-1"
                   >
