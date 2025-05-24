@@ -1,3 +1,4 @@
+
 // src/app/toolbox/page.tsx
 "use client";
 
@@ -7,26 +8,22 @@ import { NavbarTools } from '@/components/NavbarTools';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import toolboxImage from '../../app/assets/tool225.png';
-import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
-import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined';
-import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
-import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
-import type { ReactElement, ElementType } from 'react';
+import { CloudSun, Coins, GraduationCap, BriefcaseBusiness, type LucideIcon } from 'lucide-react';
 
 interface ToolButtonInfo {
   name: string;
   path: string;
-  icon: ElementType; // Changed from LucideIcon to ElementType for MUI
+  icon: LucideIcon;
 }
 
 export default function ToolboxPage() {
   const router = useRouter();
 
   const toolButtons: ToolButtonInfo[] = [
-    { name: 'Weather Center', path: '/toolbox/weather', icon: WbSunnyOutlinedIcon },
-    { name: 'Coin Toss', path: '/toolbox/cointoss', icon: MonetizationOnOutlinedIcon },
-    { name: 'Umpire Classroom', path: '/toolbox/umpireclassroom', icon: SchoolOutlinedIcon },
-    { name: 'Assignor Info', path: '/toolbox/officialroster', icon: BusinessCenterOutlinedIcon },
+    { name: 'Weather Center', path: '/toolbox/weather', icon: CloudSun },
+    { name: 'Coin Toss', path: '/toolbox/cointoss', icon: Coins },
+    { name: 'Umpire Classroom', path: '/toolbox/umpireclassroom', icon: GraduationCap },
+    { name: 'Assignor Info', path: '/toolbox/officialroster', icon: BriefcaseBusiness },
   ];
 
   const handleToolClick = (path: string) => {
@@ -89,7 +86,7 @@ export default function ToolboxPage() {
                     flex flex-col items-center justify-center p-1
                   "
                 >
-                  <IconComponent sx={{ fontSize: '36px', color: 'black', marginBottom: '4px' }} />
+                  <IconComponent className="h-9 w-9 mb-1 text-black" />
                   <span
                     className="text-black font-semibold text-xs text-center w-full px-1 truncate absolute bottom-1"
                   >
