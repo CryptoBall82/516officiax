@@ -7,7 +7,7 @@ import { NavbarTools } from '@/components/NavbarTools';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import toolboxImage from '../../app/assets/tool225.png';
-import { CloudSun, Coin, GraduationCap, BriefcaseBusiness, type LucideIcon } from 'lucide-react';
+import { CloudSun, Coins, GraduationCap, BriefcaseBusiness, type LucideIcon } from 'lucide-react';
 
 interface ToolButtonInfo {
   name: string;
@@ -20,7 +20,7 @@ export default function ToolboxPage() {
 
   const toolButtons: ToolButtonInfo[] = [
     { name: 'Weather Center', path: '/toolbox/weather', icon: CloudSun },
-    { name: 'Coin Toss', path: '/toolbox/cointoss', icon: Coin },
+    { name: 'Coin Toss', path: '/toolbox/cointoss', icon: Coins },
     { name: 'Umpire Classroom', path: '/toolbox/umpireclassroom', icon: GraduationCap },
     { name: 'Assignor Info', path: '/toolbox/officialroster', icon: BriefcaseBusiness },
   ];

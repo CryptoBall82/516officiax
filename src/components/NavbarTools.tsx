@@ -17,7 +17,7 @@ interface NavbarIconProps {
 
 const NavbarIcon: React.FC<NavbarIconProps> = ({name, text, onClick, isActive}) => {
   const iconColor = isActive ? 'rgba(0,0,0,1)' : 'rgba(255,255,255,1)';
-  const textColor = isActive ? 'rgba(0,0,0,1)' : 'rgba(255,255,255,1)'; // Use textColor for text
+  const textColor = isActive ? 'rgba(0,0,0,1)' : 'rgba(255,255,255,1)';
 
   let iconComponent;
   switch (name) {
@@ -43,7 +43,7 @@ const NavbarIcon: React.FC<NavbarIconProps> = ({name, text, onClick, isActive}) 
   return (
     <div className="flex flex-col items-center justify-center cursor-pointer" onClick={onClick}>
       {iconComponent}
-      <span className="text-xs" style={{color: textColor}}>{text}</span> {/* Use textColor */}
+      <span className="text-xs" style={{color: textColor}}>{text}</span>
     </div>
   );
 };
@@ -58,7 +58,7 @@ const NavbarTools: React.FC = () => {
 
   return (
     <nav
-      className="fixed bottom-0 w-full h-[75px] bg-[rgba(204,0,0,1)] shadow-[0_-4px_10px_4px_rgba(187,187,187,.5)] z-10 flex items-center justify-between px-4"
+      className="fixed bottom-0 w-full h-[75px] bg-[rgba(204,0,0,1)] shadow-[0_-4px_10px_4px_rgba(187,187,187,0)] z-10 flex items-center justify-between px-4"
     >
       <div style={{paddingLeft: '5px'}}>
         <NavbarIcon name="Baseball" text="Leagues" onClick={navigateToLeaguesPage} isActive={false} />
