@@ -49,7 +49,7 @@ export default function HomePage() {
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="text-lg px-8 py-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Link href="/home">Go to Home</Link>
+              <Link href="/login">Go to Home</Link>
             </Button>
           </div>
         </section>
