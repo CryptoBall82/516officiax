@@ -6,8 +6,8 @@ import { DefaultHeader } from '@/components/DefaultHeader';
 import { NavbarTools } from '@/components/NavbarTools';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import toolboxImage from '../../app/assets/tool225.png';
-import coinTossImage from '../../app/assets/coin-toss3.png'; // Local image for coin toss
+import toolboxImage from '../../../public/assets/tool225.png';
+import coinTossImage from '../../../public/assets/coin-toss3.png'; // Local image for coin toss
 import ThunderstormOutlinedIcon from '@mui/icons-material/ThunderstormOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';

@@ -6,7 +6,7 @@ import Image from 'next/image';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 import { useRouter } from 'next/navigation';
-import oxImage from '../app/assets/OX lett white175F.png'; // Adjusted path assuming AuthHeader.tsx is in src/components/
+import oxImage from '../../public/assets/OX lett white175F.png'; // Adjusted path assuming AuthHeader.tsx is in src/components/
 
 // RENAMED the component and made it a named export directly
 export const AuthHeader: React.FC = () => { 

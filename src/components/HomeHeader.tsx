@@ -4,7 +4,7 @@
 import React from 'react';
 import Image from 'next/image'; // Import the next/image component
 import { Menu } from 'lucide-react'; // Replaced MUI icon with lucide-react
-import oxImage from '../app/assets/OX lett white175F.png';
+import oxImage from '../../public/assets/OX lett white175F.png';
 
 const HomeHeader: React.FC = () => {
   return (

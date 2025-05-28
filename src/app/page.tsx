@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ShieldCheck, Bot, CalendarDays, Briefcase } from "lucide-react";
-import oxImage from './assets/OX lett white175F.png'; // Import the logo image
+import oxImage from '../../public/assets/OX lett white175F.png'; // Import the logo image
 
 export default function HomePage() {
   return (

@@ -11,7 +11,7 @@ import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined
 import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import { useRouter } from 'next/navigation';
-import officiaXIcon from '../../app/assets/ox icon white 225.png';
+import officiaXIcon from '../../../public/assets/OX lett white175F.png';
 
 export default function Home() {
   const router = useRouter();

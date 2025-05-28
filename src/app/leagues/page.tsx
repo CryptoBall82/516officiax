@@ -6,7 +6,7 @@ import {NavbarLeagues} from '@/components/NavbarLeagues';
 import {Button} from '@/components/ui/button'; // Import the Button component
 import {useRouter} from 'next/navigation'; // Import useRouter
 import Image from 'next/image'; // Import the Image component
-import leagueImage from '../../app/assets/Leagues225.png';
+import leagueImage from '../../../public/assets/Leagues225.png';
 
 export default function Leagues() {
   const buttonNames = ['AYBA', 'Ocee Park', 'NFHS', 'Perfect Game', 'Training Legends'];

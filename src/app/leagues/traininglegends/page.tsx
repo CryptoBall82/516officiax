@@ -6,7 +6,7 @@ import { NavbarLeagues } from '@/components/NavbarLeagues';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import tlImage from '../../../app/assets/training_legends175.png';
+import tlImage from '../../../../public/assets/training_legends175.png';
 
 export default function TrainingLegendsPage() {
   const router = useRouter();

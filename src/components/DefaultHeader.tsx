@@ -5,7 +5,7 @@ import React from 'react';
 import Image from 'next/image'; // Import the next/image component
 import { ChevronLeft, Menu } from 'lucide-react'; // Use lucide-react icons
 import { useRouter } from 'next/navigation';
-import oxImage from '../app/assets/OX lett white175F.png';
+import oxImage from '../../public/assets/OX lett white175F.png';
 
 // Removed import for oxImage as it's not found
 

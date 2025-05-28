@@ -7,8 +7,8 @@ import { NavbarLeagues } from '@/components/NavbarLeagues';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image'; // Import Image component
-import oceeImage from '../../../app/assets/ocee.png';
-import oceeParkImage from '../../../app/assets/ocee_parking2x.png';
+import oceeImage from '../../../../public/assets/ocee.png';
+import oceeParkImage from '../../../../public/assets/ocee_parking2x.png';
 import {
   Dialog,
   DialogContent,

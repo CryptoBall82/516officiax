@@ -7,9 +7,9 @@ import { NavbarLeagues } from '@/components/NavbarLeagues';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 // Corrected image import paths to reflect structure: src/assets/
-import aybaImage from '../../../app/assets/ayba_logo225.png';
-import willsImage from '../../../app/assets/wills2x.png';
-import webbImage from '../../../app/assets/webb22x.png';
+import aybaImage from '../../../../public/assets/ayba_logo225.png';
+import willsImage from '../../../../public/assets/wills2x.png';
+import webbImage from '../../../../public/assets/webb22x.png';
 import {
   Dialog,
   DialogContent,

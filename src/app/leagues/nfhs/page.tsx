@@ -7,7 +7,7 @@ import { NavbarLeagues } from '@/components/NavbarLeagues';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import nfhsImage from '../../../app/assets/nfhs.png';
+import nfhsImage from '../../../../public/assets/nfhs.png';
 
 
 export default function NFHSPage() {
