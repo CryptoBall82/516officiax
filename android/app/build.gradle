@@ -22,9 +22,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    // ADD OR MODIFY compileOptions HERE
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
 }
 
 repositories {
+        // Using Maven repositories instead of flatDir when possible
+    google()
+    mavenCentral()
+    // Only use flatDir as a fallback for local JARs that aren't in Maven repositories
     flatDir{
         dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'
     }

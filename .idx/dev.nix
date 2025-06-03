@@ -8,6 +8,15 @@
     pkgs.nodejs_20
     pkgs.zulu
     pkgs.material-design-icons
+    pkgs.bun
+    pkgs.ruby
+    pkgs.bundler # Corrected from your previous log, ensure this is bundler
+    pkgs.jdk17
+    pkgs.jdk21
+    pkgs.gcc
+    pkgs.gnumake
+    pkgs.curl
+    pkgs.android-tools 
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -23,6 +32,28 @@
     extensions = [
       # "vscodevim.vim"
       "PKief.material-icon-theme"
+      "amazonwebservices.amazon-q-vscode"
+      "amazonwebservices.aws-toolkit-vscode"
+      "anyscalecompute.anyscale-workspaces"
+      "bradlc.vscode-tailwindcss"
+      "Dart-Code.dart-code"
+      "golang.go"
+      "ms-vscode.js-debug"
+      "PKief.material-icon-theme"
+      "redhat.java"
+      "redhat.vscode-yaml"
+      "ritwickdey.LiveServer"
+      "vscjava.vscode-gradle"
+      "vscjava.vscode-java-debug"
+      "vscjava.vscode-java-dependency"
+      "vscjava.vscode-java-pack"
+      "vscjava.vscode-java-test"
+      "vscjava.vscode-maven"
+      "msjsdiag.vscode-react-native"
+      "react-native-directory.vscode-react-native-directory"
+      "Tomi.xajssnippets"
+      "Tomi.xasnippets"
+      "swmansion.react-native-ide"
     ];
     workspace = {
       onCreate = {
