@@ -92,7 +92,13 @@ export default function AybaPage() {
                   onClick={buttonInfo.action}
                 >
                   <div className="flex flex-col items-center justify-center h-full">
-                    {buttonInfo.icon && React.createElement(buttonInfo.icon, { style: { color: 'rgba(0,0,0,1)', width: '35px', height: '35px' } })}
+                    {buttonInfo.icon === MenuBookOutlinedIcon ? (
+                      <MenuBookOutlinedIcon style={{ color: 'rgba(0,0,0,1)', width: '35px', height: '35px' }} />
+                    ) : buttonInfo.icon === CloudRainWind ? (
+                      <CloudRainWind style={{ color: 'rgba(0,0,0,1)', width: '35px', height: '35px' }} />
+                    ) : buttonInfo.icon === ParkingIcon ? (
+                      <ParkingIcon style={{ color: 'rgba(0,0,0,1)', width: '35px', height: '35px' }} />
+                    ) : null}
                     <span
                       className="text-[rgba(0,0,0,1)] font-semibold absolute bottom-0.5 text-center w-full"
                       style={{fontSize: '12pt'}}
