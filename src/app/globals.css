@@ -4,6 +4,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  /* Add safe area top padding for devices with notches/status bars */
+  padding-top: env(safe-area-inset-top);
 }
 
 @layer base {
