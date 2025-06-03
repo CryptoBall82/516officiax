@@ -7,7 +7,7 @@ import { NavbarLeagues } from '@/components/NavbarLeagues';
 
 export default function NFHSHighSchoolRulesPage() {
   // Use the /preview URL for Google Drive for better embed compatibility
-  const documentUrl = "https://drive.google.com/file/d/1j8CouXxKApIE5Eg2enO2TpEwVidafuBn/preview";
+  const documentUrl = "https://drive.google.com/file/d/1j8CouXxKApIE5Eg2enO2TpEwVidafuBn/view";
 
   return (
     <div className="flex flex-col h-screen items-center mx-auto max-w-[500px]">
