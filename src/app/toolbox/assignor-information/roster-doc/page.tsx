@@ -9,7 +9,7 @@ import { NavbarTools } from '@/components/NavbarTools';
 
 export default function RosterDocumentPage() {
   // Use the /preview URL for Google Sheets for better embed compatibility
-  const documentUrl = "https://docs.google.com/spreadsheets/d/1GyoS9sNqgmltdAX91GrTLDKe12qp9u7QJlE57d98rAc/preview"; 
+  const documentUrl = "https://docs.google.com/spreadsheets/d/1GyoS9sNqgmltdAX91GrTLDKe12qp9u7QJlE57d98rAc/view"; 
 
   return (
     <div className="flex flex-col h-screen items-center mx-auto max-w-[500px]">
