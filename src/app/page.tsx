@@ -56,7 +56,7 @@ export default function HomePage() {
                 Sign Up
               </Link>
             </Button>
-            <Button variant="outline" asChild className="w-[150px] h-[50px] text-lg rounded-lg shadow-lg transform hover:scale-105 transition-transform border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Button variant="outline" asChild className="w-[150px] h-[50px] text-lg rounded-lg shadow-lg transform hover:scale-105 transition-transform border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-white">
               <Link href="/login">Login</Link>
             </Button>
           </div>
