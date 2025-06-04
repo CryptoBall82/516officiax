@@ -48,7 +48,7 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg text-muted-foreground sm:text-xl md:text-2xl">
-            The ultimate platform for sports officials. Integrate your schedule, access essential tools, instantly access you rulebooks, and leverage the custom AI for rule interpretations.
+            The ultimate platform for sports officials. Integrate your schedule, access essential tools, instantly access your rulebooks, and leverage our custom AI for rule interpretations.
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <Button asChild className="w-[150px] h-[50px] bg-accent hover:bg-accent/90 text-accent-foreground text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-transform">
@@ -77,7 +77,7 @@ export default function HomePage() {
                 description="Access vital assignor info, weather updates, coin flip widget, and umpire classroom, all in one place."
               />
               <FeatureCard
-                icon={<BookOpenText className="h-10 w-10 text-accent mb-4 mx-auto" />}
+                icon={<BookOpenText className="h-10 w-10 text-accent mb-4 mx-auto" />} 
                 title="Rulebooks"
                 description="Instantly access official rulebooks for all the leagues you work, right when you need them."
               />
