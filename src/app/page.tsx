@@ -1,5 +1,5 @@
 // src/app/page.tsx
-"use client"; // Add this directive
+"use client"; 
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -82,8 +82,8 @@ export default function HomePage() {
               />
               <FeatureCard
                 icon={<AutoAwesomeOutlinedIcon sx={{ fontSize: '40px', color: 'hsl(var(--accent))', marginBottom: '1rem' }} />}
-                title="AI Assistant"
-                description="Get instant, AI-powered assistance for rule interpretations and queries based on official rulebooks."
+                title="OfficiaX AI"
+                description="Get instant, AI-powered assistance for all your rule interpretations and queries. This agent is specially trained on the rulebooks you use."
               />
             </div>
           </div>
@@ -116,4 +116,3 @@ function FeatureCard({ icon, title, description }: FeatureCardProps) {
     </div>
   );
 }
-
