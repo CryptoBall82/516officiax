@@ -107,10 +107,11 @@ interface FeatureCardProps {
 
 function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
-    <div className="flex flex-col items-start text-left bg-card p-6 rounded-xl shadow-lg hover:shadow-accent/20 transition-shadow duration-300">
+    <div className="flex flex-col items-start text-left bg-card p-6 rounded-xl shadow-lg hover:shadow-accent/20 transition-shadow duration-300 border border-primary">
       {icon}
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-muted-foreground">{description}</p>
     </div>
   );
 }
+
