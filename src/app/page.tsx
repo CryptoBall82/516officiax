@@ -1,14 +1,13 @@
-
 // src/app/page.tsx
-"use client"; 
+"use client";
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { BookOpenText } from "lucide-react"; 
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
+import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined'; // Added MenuBookOutlinedIcon
 
 export default function HomePage() {
   return (
@@ -39,7 +38,7 @@ export default function HomePage() {
 
       <main className="flex-grow">
         <section className="container mx-auto px-4 py-16 sm:py-24 lg:py-32 text-center">
-          
+
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Welcome to{' '}
             <span className="font-cinzel-decorative italic">
@@ -65,7 +64,7 @@ export default function HomePage() {
         <section className="py-16 bg-background/50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Key Features</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> 
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <FeatureCard
                 icon={<CalendarMonthOutlinedIcon sx={{ fontSize: '40px', color: 'hsl(var(--accent))', marginBottom: '1rem' }} />}
                 title="Schedule Integration"
@@ -77,7 +76,7 @@ export default function HomePage() {
                 description="Access vital assignor info, weather updates, coin flip widget, and umpire classroom, all in one place."
               />
               <FeatureCard
-                icon={<BookOpenText className="h-10 w-10 text-accent mb-4 mx-auto" />} 
+                icon={<MenuBookOutlinedIcon sx={{ fontSize: '40px', color: 'hsl(var(--accent))', marginBottom: '1rem' }} />}
                 title="Rulebooks"
                 description="Instantly access official rulebooks for all the leagues you work, right when you need them."
               />
@@ -89,7 +88,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        
+
       </main>
 
       <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border/50">
@@ -107,11 +106,10 @@ interface FeatureCardProps {
 
 function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
-    <div className="bg-card p-6 rounded-xl shadow-lg hover:shadow-accent/20 transition-shadow duration-300">
+    <div className="flex flex-col items-center text-center bg-card p-6 rounded-xl shadow-lg hover:shadow-accent/20 transition-shadow duration-300">
       {icon}
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-muted-foreground">{description}</p>
     </div>
   );
 }
-
