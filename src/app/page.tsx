@@ -51,7 +51,7 @@ export default function HomePage() {
             The ultimate platform for sports officials. Integrate your schedule, access essential tools, instantly access your rulebooks, and leverage our custom AI for rule interpretations.
           </p>
           <div className="mt-10 flex justify-center gap-4">
-            <Button asChild className="w-[150px] h-[50px] bg-accent hover:bg-accent/90 text-accent-foreground text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+            <Button asChild className="w-[150px] h-[50px] bg-accent hover:bg-accent/90 text-accent-foreground text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-transform border border-black">
               <Link href="/signup">
                 Sign Up
               </Link>
