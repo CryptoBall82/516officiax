@@ -4,7 +4,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, BookOpenText } from "lucide-react"; // Added BookOpenText
+import { ArrowRight, BookOpenText } from "lucide-react"; 
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
@@ -64,7 +64,7 @@ export default function HomePage() {
         <section className="py-16 bg-background/50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Key Features</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> {/* Updated to lg:grid-cols-4 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> 
               <FeatureCard
                 icon={<CalendarMonthOutlinedIcon sx={{ fontSize: '40px', color: 'hsl(var(--accent))', marginBottom: '1rem' }} />}
                 title="Schedule Integration"
@@ -78,7 +78,7 @@ export default function HomePage() {
               <FeatureCard
                 icon={<BookOpenText className="h-10 w-10 text-accent mb-4" />}
                 title="Rulebooks"
-                description="Access and search official rulebooks for various leagues quickly and easily."
+                description="Instantly access official rulebooks for all the leagues you work, right when you need them."
               />
               <FeatureCard
                 icon={<AutoAwesomeOutlinedIcon sx={{ fontSize: '40px', color: 'hsl(var(--accent))', marginBottom: '1rem' }} />}
@@ -116,3 +116,4 @@ function FeatureCard({ icon, title, description }: FeatureCardProps) {
     </div>
   );
 }
+
