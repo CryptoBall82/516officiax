@@ -6,7 +6,6 @@ import { DefaultHeader } from '@/components/DefaultHeader';
 import { NavbarLeagues } from '@/components/NavbarLeagues';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-// Removed local image imports that traverse to public
 import {
   Dialog,
   DialogContent,
@@ -51,7 +50,7 @@ export default function AybaPage() {
               AYBA
             </span>
             <Image
-              src="/assets/ayba_logo225.png" // Corrected path
+              src="/assets/ayba_logo225.png" 
               alt="AYBA Logo"
               data-ai-hint="ayba logo baseball"
               width={223}
@@ -118,7 +117,7 @@ export default function AybaPage() {
           </DialogClose>
           <div className="relative w-full h-auto">
             <Image
-              src="/assets/wills2x.png" // Corrected path
+              src="/assets/wills2x.png" 
               alt="Wills Park Parking Map"
               data-ai-hint="parking map aerial view"
               width={390} 
@@ -149,7 +148,7 @@ export default function AybaPage() {
           </DialogClose>
           <div className="relative w-full h-auto">
             <Image
-              src="/assets/webb22x.png" // Corrected path
+              src="/assets/webb22x.png" 
               alt="Webb Bridge Park Parking Map"
               data-ai-hint="parking map aerial view baseball"
               width={390} 
