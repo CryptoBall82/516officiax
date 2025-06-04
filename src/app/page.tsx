@@ -3,7 +3,10 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ShieldCheck, Bot, CalendarDays, Briefcase } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
+import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
 
 export default function HomePage() {
   return (
@@ -62,17 +65,17 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-center mb-12">Key Features</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <FeatureCard
-                icon={<CalendarDays className="h-10 w-10 text-accent mb-4" />}
+                icon={<CalendarMonthOutlinedIcon sx={{ fontSize: '40px', color: 'hsl(var(--accent))', marginBottom: '1rem' }} />}
                 title="Schedule Integration"
                 description="Seamlessly sync your Google and iCloud calendars to manage game schedules effortlessly."
               />
               <FeatureCard
-                icon={<Briefcase className="h-10 w-10 text-accent mb-4" />}
+                icon={<ConstructionOutlinedIcon sx={{ fontSize: '40px', color: 'hsl(var(--accent))', marginBottom: '1rem' }} />}
                 title="Official's Toolbox"
                 description="Access vital assigner info, weather updates, coin flip, and an umpire classroom, all in one place."
               />
               <FeatureCard
-                icon={<Bot className="h-10 w-10 text-accent mb-4" />}
+                icon={<AutoAwesomeOutlinedIcon sx={{ fontSize: '40px', color: 'hsl(var(--accent))', marginBottom: '1rem' }} />}
                 title="AI Assistant"
                 description="Get instant, AI-powered assistance for rule interpretations and queries based on official rulebooks."
               />
@@ -107,4 +110,3 @@ function FeatureCard({ icon, title, description }: FeatureCardProps) {
     </div>
   );
 }
-
