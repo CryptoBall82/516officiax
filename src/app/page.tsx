@@ -51,12 +51,12 @@ export default function HomePage() {
             The ultimate platform for sports officials. Integrate your schedule, access essential tools, instantly access you rulebooks, and leverage the custom AI for rule interpretations.
           </p>
           <div className="mt-10 flex justify-center gap-4">
-            <Button asChild className="w-[150px] h-[50px] bg-accent hover:bg-accent/90 text-accent-foreground text-lg rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+            <Button asChild className="w-[150px] h-[50px] bg-accent hover:bg-accent/90 text-accent-foreground text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-transform">
               <Link href="/signup">
                 Sign Up
               </Link>
             </Button>
-            <Button variant="outline" asChild className="w-[150px] h-[50px] text-lg rounded-lg shadow-lg transform hover:scale-105 transition-transform border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-white">
+            <Button variant="outline" asChild className="w-[150px] h-[50px] text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-transform border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-white">
               <Link href="/login">Login</Link>
             </Button>
           </div>
