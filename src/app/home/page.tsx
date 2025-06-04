@@ -62,20 +62,22 @@ export default function Home() {
       <div className="flex-grow relative w-full">
         <div className="flex justify-center">
           <Image
-            src="/assets/ox icon white 225.png" // Corrected path
+            src="/assets/ox icon white 225.png" 
             alt="OfficiaX Icon"
             data-ai-hint="logo icon"
-            width={175}
-            height={175}
+            width={225}
+            height={225}
             style={{
               position: 'absolute',
               top: '90px',
               left: '50%',
               transform: 'translateX(-50%)',
+              height: '225px', // Updated height in style
+              width: 'auto',   // Keep width auto to maintain aspect ratio based on new height
             }}
             onError={(e: any) => {
               e.currentTarget.onerror = null; 
-              e.currentTarget.src = 'https://placehold.co/175x175.png';
+              e.currentTarget.src = 'https://placehold.co/225x225.png'; // Updated placeholder
             }}
           />
         </div>
