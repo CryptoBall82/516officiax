@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist, Geist_Mono, Cinzel_Decorative } from 'next/font/google'; // Added Cinzel_Decorative
 import './globals.css';
 import { AuthProvider } from '@/contexts/auth-context';
 import { Toaster } from "@/components/ui/toaster";
@@ -14,6 +14,12 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const cinzelDecorative = Cinzel_Decorative({ // New font initialization
+  subsets: ['latin'],
+  weight: ['400', '700', '900'], // Import available weights
+  variable: '--font-cinzel-decorative',
+});
+
 export const metadata: Metadata = {
   title: 'OfficiaX',
   description: 'Empowering Officials with Advanced Tools & AI',
@@ -26,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${cinzelDecorative.variable} antialiased bg-background text-foreground`}> {/* Added cinzelDecorative.variable */}
         <AuthProvider>
           {children}
           <Toaster />

@@ -34,9 +34,13 @@ export default function HomePage() {
 
       <main className="flex-grow">
         <section className="container mx-auto px-4 py-16 sm:py-24 lg:py-32 text-center">
-          <ShieldCheck className="mx-auto h-20 w-20 text-accent mb-6" />
+          
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            Welcome to <span className="text-white">Officia</span><span className="text-primary">X</span>
+            Welcome to{' '}
+            <span className="font-[var(--font-cinzel-decorative)] italic">
+              <span className="text-white">Officia</span>
+              <span className="text-primary">X</span>
+            </span>
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg text-muted-foreground sm:text-xl md:text-2xl">
             The ultimate platform for sports officials. Streamline your schedule, access essential tools, and leverage AI for rule interpretations.
