@@ -5,7 +5,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, BookOpenText } from "lucide-react"; 
+import { BookOpenText } from "lucide-react"; 
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
@@ -53,11 +53,11 @@ export default function HomePage() {
           <div className="mt-10 flex justify-center gap-4">
             <Button asChild className="w-[150px] h-[50px] bg-accent hover:bg-accent/90 text-accent-foreground text-lg rounded-lg shadow-lg transform hover:scale-105 transition-transform">
               <Link href="/signup">
-                Get Started <ArrowRight className="ml-2 h-5 w-5" />
+                Sign Up
               </Link>
             </Button>
             <Button variant="outline" asChild className="w-[150px] h-[50px] text-lg rounded-lg shadow-lg transform hover:scale-105 transition-transform border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Link href="/login">Go to Home</Link>
+              <Link href="/login">Login</Link>
             </Button>
           </div>
         </section>
@@ -77,7 +77,7 @@ export default function HomePage() {
                 description="Access vital assignor info, weather updates, coin flip widget, and umpire classroom, all in one place."
               />
               <FeatureCard
-                icon={<BookOpenText className="h-10 w-10 text-accent mb-4" />}
+                icon={<BookOpenText className="h-10 w-10 text-accent mb-4 mx-auto" />}
                 title="Rulebooks"
                 description="Instantly access official rulebooks for all the leagues you work, right when you need them."
               />
