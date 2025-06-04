@@ -7,7 +7,6 @@ import { DefaultHeader } from '@/components/DefaultHeader';
 import { NavbarTools } from '@/components/NavbarTools';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-// Removed local image imports for toolboxImage and coinTossImage
 import ThunderstormOutlinedIcon from '@mui/icons-material/ThunderstormOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
@@ -48,23 +47,23 @@ export default function ToolboxPage() {
         </span>
 
         <Image
-          src="/assets/tool225.png" // Corrected path
+          src="/assets/tool225.png" 
           alt="Toolbox Icon"
           data-ai-hint="tools wrench hammer"
           width={225}
-          height={129}
+          height={225} 
           style={{
             position: 'absolute',
             top: '130px',
             left: '50%',
             transform: 'translateX(-50%)',
-            width: 'auto',
-            height: '129px',
+            width: 'auto', 
+            height: '225px', 
           }}
           priority
           onError={(e: any) => {
             e.currentTarget.onerror = null; 
-            e.currentTarget.src = 'https://placehold.co/225x129.png';
+            e.currentTarget.src = 'https://placehold.co/225x225.png'; 
           }}
         />
 
