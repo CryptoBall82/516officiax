@@ -60,7 +60,17 @@ export default function Home() {
     <div className="flex flex-col h-screen items-center mx-auto max-w-[500px]">
       <HomeHeader />
       <div className="flex-grow relative w-full">
-        <div className="flex justify-center">
+        <div className="flex justify-center relative">
+          <span
+            className="absolute font-bold text-3xl text-foreground"
+            style={{
+              top: '90px',
+              left: '50%',
+              transform: 'translateX(-50%)',
+            }}
+          >
+            Dashboard
+          </span>
           <Image
             src="/assets/ox icon white 225.png" 
             alt="OfficiaX Icon"
@@ -69,15 +79,15 @@ export default function Home() {
             height={225}
             style={{
               position: 'absolute',
-              top: '90px',
+              top: '130px', // Adjusted top to make space for the title
               left: '50%',
               transform: 'translateX(-50%)',
-              height: '225px', // Updated height in style
-              width: 'auto',   // Keep width auto to maintain aspect ratio based on new height
+              height: '225px', 
+              width: 'auto',   
             }}
             onError={(e: any) => {
               e.currentTarget.onerror = null; 
-              e.currentTarget.src = 'https://placehold.co/225x225.png'; // Updated placeholder
+              e.currentTarget.src = 'https://placehold.co/225x225.png'; 
             }}
           />
         </div>
