@@ -90,9 +90,6 @@ export default function HomePage() {
           </div>
         </section>
         
-        <section className="py-16 container mx-auto px-4 text-center">
-           <Image src="https://placehold.co/1200x400.png" alt="OfficiaX platform mockup" width={1200} height={400} className="rounded-lg shadow-xl mx-auto" data-ai-hint="sports officials technology" />
-        </section>
       </main>
 
       <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border/50">
