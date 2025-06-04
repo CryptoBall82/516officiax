@@ -7,7 +7,6 @@ import { NavbarLeagues } from '@/components/NavbarLeagues';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image'; 
-// Removed local image imports
 import {
   Dialog,
   DialogContent,
@@ -53,7 +52,7 @@ export default function OceeParkPage() {
               Ocee Park
             </span>
             <Image
-              src="/assets/ocee.png" // Corrected path
+              src="/assets/ocee.png" 
               alt="Ocee Park Logo"
               data-ai-hint="ocee park logo baseball"
               width={175}
@@ -64,6 +63,7 @@ export default function OceeParkPage() {
                 left: '50%',
                 transform: 'translateX(-50%)',
               }}
+              priority
               onError={(e: any) => {
                 e.currentTarget.onerror = null;
                 e.currentTarget.src = 'https://placehold.co/175x175.png'; 
@@ -72,9 +72,9 @@ export default function OceeParkPage() {
           </div>
 
            <p
-              className="absolute text-black font-semibold text-center"
+              className="absolute text-white font-semibold text-center" // Changed text-black to text-white
               style={{
-                top: '255px', 
+                bottom: '283px', // Adjusted: 90px (buttons bottom) + 177px (button stack height) + 16px (gap)
                 left: '50%',
                 transform: 'translateX(-50%)',
                 width: '90%' 
@@ -112,7 +112,7 @@ export default function OceeParkPage() {
            </DialogClose>
           <div className="relative w-full h-auto"> 
             <Image
-              src="/assets/ocee_parking2x.png" // Corrected path
+              src="/assets/ocee_parking2x.png" 
               alt="Ocee Park Parking Map"
               data-ai-hint="parking map aerial view baseball park"
               width={390} 
