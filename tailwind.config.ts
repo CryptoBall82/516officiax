@@ -9,9 +9,15 @@ export default {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        sans: ['var(--font-geist-sans)', 'sans-serif'],
+        mono: ['var(--font-geist-mono)', 'monospace'],
+        'cinzel-decorative': ['var(--font-cinzel-decorative)', 'serif'],
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+  			
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'

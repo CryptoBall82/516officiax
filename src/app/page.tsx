@@ -37,7 +37,7 @@ export default function HomePage() {
           
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Welcome to{' '}
-            <span className="font-[var(--font-cinzel-decorative)] italic">
+            <span className="font-cinzel-decorative italic">
               <span className="text-white">Officia</span>
               <span className="text-primary">X</span>
             </span>
