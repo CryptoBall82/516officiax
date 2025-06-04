@@ -93,7 +93,7 @@ export default function HomePage() {
       </main>
 
       <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border/50">
-        © {new Date().getFullYear()} OfficiaX LLC. Elevate Your Game.
+        © {new Date().getFullYear()} OfficiaX LLC. <span className="italic">The Future of Officiating.</span>
       </footer>
     </div>
   );
