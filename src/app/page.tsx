@@ -1,3 +1,4 @@
+
 // src/app/page.tsx
 "use client";
 
@@ -7,7 +8,7 @@ import Image from "next/image";
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
-import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined'; // Added MenuBookOutlinedIcon
+import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined'; 
 
 export default function HomePage() {
   return (
@@ -106,7 +107,7 @@ interface FeatureCardProps {
 
 function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
-    <div className="flex flex-col items-center text-center bg-card p-6 rounded-xl shadow-lg hover:shadow-accent/20 transition-shadow duration-300">
+    <div className="flex flex-col items-start text-left bg-card p-6 rounded-xl shadow-lg hover:shadow-accent/20 transition-shadow duration-300">
       {icon}
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-muted-foreground">{description}</p>
