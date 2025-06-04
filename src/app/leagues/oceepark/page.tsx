@@ -55,8 +55,8 @@ export default function OceeParkPage() {
               src="/assets/ocee.png" 
               alt="Ocee Park Logo"
               data-ai-hint="ocee park logo baseball"
-              width={175}
-              height={175}
+              width={225}
+              height={225}
               style={{
                 position: 'absolute',
                 top: '130px', 
@@ -66,15 +66,15 @@ export default function OceeParkPage() {
               priority
               onError={(e: any) => {
                 e.currentTarget.onerror = null;
-                e.currentTarget.src = 'https://placehold.co/175x175.png'; 
+                e.currentTarget.src = 'https://placehold.co/225x225.png'; 
               }}
             />
           </div>
 
            <p
-              className="absolute text-white font-semibold text-center" // Changed text-black to text-white
+              className="absolute text-white font-semibold text-center"
               style={{
-                bottom: '283px', // Adjusted: 90px (buttons bottom) + 177px (button stack height) + 16px (gap)
+                bottom: '283px', 
                 left: '50%',
                 transform: 'translateX(-50%)',
                 width: '90%' 
