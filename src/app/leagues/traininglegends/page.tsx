@@ -7,7 +7,6 @@ import { NavbarLeagues } from '@/components/NavbarLeagues';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-// Removed: import tlImage from '../../../../public/assets/training_legends175.png';
 
 export default function TrainingLegendsPage() {
   const router = useRouter();
@@ -37,7 +36,7 @@ export default function TrainingLegendsPage() {
               Training Legends
             </span>
             <Image
-              src="/assets/training_legends175.png" // Corrected path
+              src="/assets/training_legends175.png" 
               alt="Training Legends Logo"
               data-ai-hint="training legends logo baseball"
               width={295} 
@@ -47,11 +46,13 @@ export default function TrainingLegendsPage() {
                 top: '130px', 
                 left: '50%',
                 transform: 'translateX(-50%)',
+                width: '225px', // Set display width
+                height: 'auto',  // Set display height to auto
               }}
               priority
               onError={(e: any) => {
                 e.currentTarget.onerror = null;
-                e.currentTarget.src = 'https://placehold.co/295x175.png'; 
+                e.currentTarget.src = 'https://placehold.co/225x133.png'; 
               }}
             />
           </div>
@@ -76,3 +77,4 @@ export default function TrainingLegendsPage() {
     </div>
   );
 }
+
