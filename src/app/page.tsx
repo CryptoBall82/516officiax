@@ -1,3 +1,4 @@
+
 // src/app/page.tsx
 "use client"; 
 
@@ -73,7 +74,7 @@ export default function HomePage() {
               <FeatureCard
                 icon={<ConstructionOutlinedIcon sx={{ fontSize: '40px', color: 'hsl(var(--accent))', marginBottom: '1rem' }} />}
                 title="Official's Toolbox"
-                description="Access vital assigner info, weather updates, coin flip, and an umpire classroom, all in one place."
+                description="Access vital assignor info, weather updates, coin flip widget, and umpire classroom, all in one place."
               />
               <FeatureCard
                 icon={<BookOpenText className="h-10 w-10 text-accent mb-4" />}
@@ -116,3 +117,4 @@ function FeatureCard({ icon, title, description }: FeatureCardProps) {
     </div>
   );
 }
+
