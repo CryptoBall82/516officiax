@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center">
             <Image
-              src="/assets/OX lett white175F.png" 
+              src="/assets/OX lett white175F.png"
               alt="OfficiaX Logo"
               data-ai-hint="logo company"
               height={40}
@@ -36,18 +36,18 @@ export default function HomePage() {
         <section className="container mx-auto px-4 py-16 sm:py-24 lg:py-32 text-center">
           <ShieldCheck className="mx-auto h-20 w-20 text-accent mb-6" />
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            Welcome to <span className="text-primary">Officia</span><span className="text-accent">X</span>
+            Welcome to <span className="text-white">Officia</span><span className="text-primary">X</span>
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg text-muted-foreground sm:text-xl md:text-2xl">
             The ultimate platform for sports officials. Streamline your schedule, access essential tools, and leverage AI for rule interpretations.
           </p>
           <div className="mt-10 flex justify-center gap-4">
-            <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+            <Button asChild className="w-[150px] h-[50px] bg-accent hover:bg-accent/90 text-accent-foreground text-lg rounded-lg shadow-lg transform hover:scale-105 transition-transform">
               <Link href="/signup">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="text-lg px-8 py-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Button variant="outline" asChild className="w-[150px] h-[50px] text-lg rounded-lg shadow-lg transform hover:scale-105 transition-transform border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               <Link href="/login">Go to Home</Link>
             </Button>
           </div>
