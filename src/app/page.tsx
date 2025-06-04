@@ -1,5 +1,6 @@
-
 // src/app/page.tsx
+"use client"; // Add this directive
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
