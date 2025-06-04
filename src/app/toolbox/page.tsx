@@ -1,3 +1,4 @@
+
 // src/app/toolbox/page.tsx
 "use client";
 
@@ -6,17 +7,15 @@ import { DefaultHeader } from '@/components/DefaultHeader';
 import { NavbarTools } from '@/components/NavbarTools';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import toolboxImage from '../../../public/assets/tool225.png';
-import coinTossImage from '../../../public/assets/coin-toss3.png'; // Local image for coin toss
+// Removed local image imports for toolboxImage and coinTossImage
 import ThunderstormOutlinedIcon from '@mui/icons-material/ThunderstormOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
 
-
 interface ToolButtonInfo {
   name: string;
   path: string;
-  icon: React.ReactNode; // Changed to React.ReactNode to accommodate MUI icons and Image components
+  icon: React.ReactNode; 
 }
 
 export default function ToolboxPage() {
@@ -24,7 +23,7 @@ export default function ToolboxPage() {
 
   const toolButtons: ToolButtonInfo[] = [
     { name: 'Weather', path: '/toolbox/weather', icon: <ThunderstormOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
-    { name: 'Coin Toss', path: '/toolbox/cointoss', icon: <Image src={coinTossImage} alt="Coin Toss" width={36} height={36} data-ai-hint="coin game" /> },
+    { name: 'Coin Toss', path: '/toolbox/cointoss', icon: <Image src="/assets/coin-toss3.png" alt="Coin Toss" width={36} height={36} data-ai-hint="coin game" /> },
     { name: 'Umpire Classroom', path: '/toolbox/umpireclassroom', icon: <SchoolOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
     { name: 'Assignor Info', path: '/toolbox/assignor-information', icon: <BusinessCenterOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
   ];
@@ -37,7 +36,6 @@ export default function ToolboxPage() {
     <div className="flex flex-col h-screen items-center mx-auto max-w-[500px] bg-background">
       <DefaultHeader />
       <div className="flex-grow relative w-full">
-        {/* Page Title */}
         <span
           className="absolute font-bold text-3xl text-white"
           style={{
@@ -49,9 +47,8 @@ export default function ToolboxPage() {
           Toolbox
         </span>
 
-        {/* Image Display */}
         <Image
-          src={toolboxImage}
+          src="/assets/tool225.png" // Corrected path
           alt="Toolbox Icon"
           data-ai-hint="tools wrench hammer"
           width={225}
@@ -71,7 +68,6 @@ export default function ToolboxPage() {
           }}
         />
 
-        {/* Buttons Container - Styled like home page */}
         <div className="absolute bottom-[90px] left-0 right-0 flex justify-center">
           <div className="grid grid-cols-2 gap-y-[25px] gap-x-[25px] p-4">
             {toolButtons.map((buttonInfo) => {

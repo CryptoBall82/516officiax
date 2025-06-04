@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ShieldCheck, Bot, CalendarDays, Briefcase } from "lucide-react";
-import oxImage from '../../public/assets/OX lett white175F.png'; // Import the logo image
+// Removed: import oxImage from '../../public/assets/OX lett white175F.png';
 
 export default function HomePage() {
   return (
@@ -13,12 +13,12 @@ export default function HomePage() {
         <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center">
             <Image
-              src={oxImage}
+              src="/assets/OX lett white175F.png" // Corrected path
               alt="OfficiaX Logo"
               data-ai-hint="logo company"
-              height={40} // Adjusted height for header
-              width={140} // Adjusted width based on aspect ratio of 175F in filename, assuming 175x50 or similar
-              style={{ height: '40px', width: 'auto' }} // Ensure responsive scaling
+              height={40}
+              width={140} 
+              style={{ height: '40px', width: 'auto' }}
               priority
             />
           </Link>

@@ -1,15 +1,12 @@
+
 'use client';
 
 import React, { useState } from 'react';
 import { DefaultHeader } from '@/components/DefaultHeader';
 import { NavbarLeagues } from '@/components/NavbarLeagues';
-// import { Button } from '@/components/ui/button'; // Removed unused import
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-// Corrected image import paths to reflect structure: src/assets/
-import aybaImage from '../../../../public/assets/ayba_logo225.png';
-import willsImage from '../../../../public/assets/wills2x.png';
-import webbImage from '../../../../public/assets/webb22x.png';
+// Removed local image imports that traverse to public
 import {
   Dialog,
   DialogContent,
@@ -20,13 +17,11 @@ import {
 import { X, CloudRainWind } from 'lucide-react';
 import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined';
 
-// Define Parking Icon SVG component
 const ParkingIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" {...props}>
     <path fill="currentColor" d="M13 7h-3a1 1 0 0 0-1 1v8a1 1 0 0 0 2 0v-2h2a3 3 0 0 0 3-3v-1a3 3 0 0 0-3-3m1 4a1 1 0 0 1-1 1h-2V9h2a1 1 0 0 1 1 1Zm-2-9a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8"/>
   </svg>
 );
-
 
 export default function AybaPage() {
   const router = useRouter();
@@ -39,11 +34,6 @@ export default function AybaPage() {
     { name: 'Wills Park', path: '#', action: () => setIsWillsDialogOpen(true), icon: ParkingIcon },
     { name: 'Webb Br', path: '#', action: () => setIsWebbDialogOpen(true), icon: ParkingIcon },
   ];
-
-  // Firebase URLs are no longer needed as primary sources for dialog images
-  // const willsParkingImageUrl = "https://firebasestorage.googleapis.com/v0/b/officiax-theme-generator.appspot.com/o/wills2x.png?alt=media&token=d52c1a6a-7d8a-4f3a-8f4e-8d0c847a71c9";
-  // const webbParkingImageUrl = "https://firebasestorage.googleapis.com/v0/b/officiax-theme-generator.appspot.com/o/webb22x.png?alt=media&token=761e32b1-e313-4b6f-b7a6-b922321d6495";
-
 
   return (
     <div className="flex flex-col h-screen items-center mx-auto max-w-[500px]">
@@ -61,12 +51,12 @@ export default function AybaPage() {
               AYBA
             </span>
             <Image
-              src={aybaImage} // Using the locally imported image
+              src="/assets/ayba_logo225.png" // Corrected path
               alt="AYBA Logo"
               data-ai-hint="ayba logo baseball"
               width={223}
               height={175}
-              priority // Consider adding priority if it's an LCP element
+              priority
               style={{
                 position: 'absolute',
                 top: '130px',
@@ -78,7 +68,7 @@ export default function AybaPage() {
               onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                 const target = e.currentTarget;
                 target.onerror = null;
-                target.src = 'https://placehold.co/223x225/cccccc/000000?text=AYBA+Logo';
+                target.src = 'https://placehold.co/223x175/cccccc/000000?text=AYBA+Logo';
               }}
             />
           </div>
@@ -113,7 +103,6 @@ export default function AybaPage() {
       </div>
       <NavbarLeagues />
 
-      {/* Dialog for Wills Parking */}
       <Dialog open={isWillsDialogOpen} onOpenChange={setIsWillsDialogOpen}>
         <DialogContent className="max-w-3xl w-auto p-0 bg-transparent border-none shadow-none">
           <DialogHeader>
@@ -129,23 +118,22 @@ export default function AybaPage() {
           </DialogClose>
           <div className="relative w-full h-auto">
             <Image
-              src={willsImage} // MODIFIED: Use local import directly
+              src="/assets/wills2x.png" // Corrected path
               alt="Wills Park Parking Map"
               data-ai-hint="parking map aerial view"
-              width={390} // You might need to adjust these if your local image has different dimensions
+              width={390} 
               height={390}
               className="object-contain rounded-md"
               onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                 const target = e.currentTarget;
                 target.onerror = null;
-                target.src = 'https://placehold.co/390x390/cccccc/000000?text=Wills+Map'; // Fallback to placeholder
+                target.src = 'https://placehold.co/390x390/cccccc/000000?text=Wills+Map'; 
               }}
             />
           </div>
         </DialogContent>
       </Dialog>
 
-        {/* Dialog for Webb Bridge Parking */}
       <Dialog open={isWebbDialogOpen} onOpenChange={setIsWebbDialogOpen}>
         <DialogContent className="max-w-3xl w-auto p-0 bg-transparent border-none shadow-none">
           <DialogHeader>
@@ -161,16 +149,16 @@ export default function AybaPage() {
           </DialogClose>
           <div className="relative w-full h-auto">
             <Image
-              src={webbImage} // MODIFIED: Use local import directly
+              src="/assets/webb22x.png" // Corrected path
               alt="Webb Bridge Park Parking Map"
               data-ai-hint="parking map aerial view baseball"
-              width={390} // You might need to adjust these if your local image has different dimensions
+              width={390} 
               height={390}
               className="object-contain rounded-md"
               onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                 const target = e.currentTarget;
                 target.onerror = null;
-                target.src = 'https://placehold.co/390x390/cccccc/000000?text=Webb+Map'; // Fallback to placeholder
+                target.src = 'https://placehold.co/390x390/cccccc/000000?text=Webb+Map'; 
               }}
             />
           </div>

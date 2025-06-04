@@ -1,3 +1,4 @@
+
 // src/app/home/page.tsx
 
 'use client';
@@ -11,7 +12,7 @@ import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined
 import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import { useRouter } from 'next/navigation';
-import officiaXIcon from '../../../public/assets/ox icon white 225.png';
+// Removed: import officiaXIcon from '../../../public/assets/ox icon white 225.png';
 
 export default function Home() {
   const router = useRouter();
@@ -21,7 +22,6 @@ export default function Home() {
   const navigateToToolsPage = () => router.push('/toolbox');
   const navigateToOfficiaX_AIPage = () => router.push('/ai-assistant');
 
-  // Removed styleOverride as all buttons will now have a default white background
   const buttons = [
     {
       name: 'Leagues',
@@ -30,7 +30,6 @@ export default function Home() {
       iconSize: '37px',
       fontSize: '14pt',
       textColor: 'text-black',
-      // You can add specific text color here if needed, e.g., textColor: '#0000FF'
     },
     {
       name: 'Schedule',
@@ -39,7 +38,6 @@ export default function Home() {
       iconSize: '37px',
       fontSize: '14pt',
       textColor: 'text-black',
-
     },
     {
       name: 'Tools',
@@ -48,7 +46,6 @@ export default function Home() {
       iconSize: '37px',
       fontSize: '14pt',
       textColor: 'text-black',
-
     },
     {
       name: 'OfficiaX AI',
@@ -57,7 +54,6 @@ export default function Home() {
       iconSize: '37px',
       fontSize: '13pt',
       textColor: 'text-black',
-
     },
   ];
 
@@ -67,7 +63,7 @@ export default function Home() {
       <div className="flex-grow relative w-full">
         <div className="flex justify-center">
           <Image
-            src={officiaXIcon}
+            src="/assets/ox icon white 225.png" // Corrected path
             alt="OfficiaX Icon"
             data-ai-hint="logo icon"
             width={175}
@@ -79,7 +75,7 @@ export default function Home() {
               transform: 'translateX(-50%)',
             }}
             onError={(e: any) => {
-              e.currentTarget.onerror = null; // prevents looping
+              e.currentTarget.onerror = null; 
               e.currentTarget.src = 'https://placehold.co/175x175.png';
             }}
           />
@@ -88,8 +84,7 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-y-[25px] gap-x-[25px] p-4">
             {buttons.map((buttonInfo) => {
               const IconComponent = buttonInfo.icon;
-              // Define text color: use buttonInfo.textColor if provided, otherwise default to a dark color for contrast with white bg
-              const textColor = buttonInfo.textColor || '#000000'; // Default dark text for white bg
+              const textColor = buttonInfo.textColor || '#000000'; 
 
               return (
                 <button
@@ -103,16 +98,13 @@ export default function Home() {
                     hover:scale-105 hover:bg-gray-50 transition-transform relative
                     flex flex-col items-center justify-center p-1
                   `}
-                  // If you had specific style overrides for some buttons beyond bg/text color,
-                  // you could still use buttonInfo.styleOverride here.
-                  // style={buttonInfo.styleOverride}
                 >
                   <IconComponent
-                    sx={{ fontSize: buttonInfo.iconSize }} // Icon color will inherit from button's text color
+                    sx={{ fontSize: buttonInfo.iconSize }}
                   />
                   <span
                     className="font-semibold absolute bottom-0.5 text-center w-full px-1 truncate"
-                    style={{ fontSize: buttonInfo.fontSize }} // Text color will inherit
+                    style={{ fontSize: buttonInfo.fontSize }}
                   >
                     {buttonInfo.name}
                   </span>
