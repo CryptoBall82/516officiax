@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ShieldCheck, Bot, CalendarDays, Briefcase } from "lucide-react";
-// Removed: import oxImage from '../../public/assets/OX lett white175F.png';
 
 export default function HomePage() {
   return (
@@ -13,11 +12,11 @@ export default function HomePage() {
         <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center">
             <Image
-              src="/assets/OX lett white175F.png" // Corrected path
+              src="/assets/OX lett white175F.png" 
               alt="OfficiaX Logo"
               data-ai-hint="logo company"
               height={40}
-              width={140} 
+              width={140}
               style={{ height: '40px', width: 'auto' }}
               priority
             />
@@ -83,7 +82,7 @@ export default function HomePage() {
       </main>
 
       <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border/50">
-        © {new Date().getFullYear()} OfficiaX. Elevate Your Game.
+        © {new Date().getFullYear()} OfficiaX LLC. Elevate Your Game.
       </footer>
     </div>
   );
