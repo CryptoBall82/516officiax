@@ -47,7 +47,7 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg text-muted-foreground sm:text-xl md:text-2xl">
-            The ultimate platform for sports officials. Streamline your schedule, access essential tools, and leverage AI for rule interpretations.
+            The ultimate platform for sports officials. Integrate your schedule, access essential tools, instantly access you rulebooks, and leverage the custom AI for rule interpretations.
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <Button asChild className="w-[150px] h-[50px] bg-accent hover:bg-accent/90 text-accent-foreground text-lg rounded-lg shadow-lg transform hover:scale-105 transition-transform">
