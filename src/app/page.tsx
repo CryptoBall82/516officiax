@@ -8,8 +8,8 @@ import { ArrowRight, ShieldCheck, Bot, CalendarDays, Briefcase } from "lucide-re
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-background to-primary/20 text-foreground">
-      <header className="sticky top-0 z-40 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <header className="sticky top-0 z-40 w-full h-[75px] bg-background border-b-[3px] border-primary shadow-[0_4px_10px_4px_rgba(187,187,187,0)]">
+        <div className="container mx-auto flex h-full items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center">
             <Image
               src="/assets/OX lett white175F.png"
@@ -107,3 +107,4 @@ function FeatureCard({ icon, title, description }: FeatureCardProps) {
     </div>
   );
 }
+
