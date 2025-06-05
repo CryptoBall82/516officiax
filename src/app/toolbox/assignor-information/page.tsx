@@ -6,6 +6,7 @@ import { DefaultHeader } from '@/components/DefaultHeader';
 import { NavbarTools } from '@/components/NavbarTools';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 export default function AssignorInformationPage() {
   const router = useRouter();
@@ -25,11 +26,36 @@ export default function AssignorInformationPage() {
             top: '90px',
             left: '50%',
             transform: 'translateX(-50%)',
-            textAlign: 'center', // Ensure text is centered if it wraps
+            textAlign: 'center', 
           }}
         >
-          Assignor Information
+          YLO
         </span>
+
+        {/* Image Display */}
+        <div className="flex justify-center relative">
+            <Image
+              src="/assets/ylo225.png" 
+              alt="YLO Logo"
+              data-ai-hint="ylo logo sports"
+              width={225}
+              height={225} 
+              style={{
+                position: 'absolute',
+                top: '140px', 
+                left: '50%',
+                transform: 'translateX(-50%)',
+                width: 'auto', 
+                height: '225px',   
+              }}
+              priority
+              onError={(e: any) => {
+                e.currentTarget.onerror = null; 
+                e.currentTarget.src = 'https://placehold.co/225x225.png'; 
+              }}
+            />
+          </div>
+
 
         {/* Buttons Container - Styled like schedule page */}
         <div
@@ -55,3 +81,4 @@ export default function AssignorInformationPage() {
     </div>
   );
 }
+
