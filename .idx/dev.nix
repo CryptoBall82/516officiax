@@ -16,19 +16,15 @@
     pkgs.gcc
     pkgs.gnumake
     pkgs.curl
-    pkgs.android-tools
-    pkgs.androidsdk
+    pkgs.android-tools 
   ];
   # Sets environment variables in the workspace
-  env = {
-    ANDROID_HOME = "${pkgs.androidsdk}/libexec/android-sdk";
-    sdk.dir = "C:\\Android\\SDK";
-  };
+  env = {};
   # This adds a file watcher to startup the firebase emulators. The emulators will only start if
   # a firebase.json file is written into the user's directory
   services.firebase.emulators = {
     detect = true;
-    projectId = "officiax-516";
+    projectId = "officia-x-1gnmhj";
     services = ["auth" "firestore"];
   };
   idx = {
@@ -58,6 +54,8 @@
       "Tomi.xajssnippets"
       "Tomi.xasnippets"
       "swmansion.react-native-ide"
+      "ms-python.debugpy"
+      "ms-python.python"
     ];
     workspace = {
       onCreate = {
