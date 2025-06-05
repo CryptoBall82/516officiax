@@ -6,7 +6,7 @@ import { NavbarLeagues } from '@/components/NavbarLeagues';
 
 export default function OceeParkRulesPage() {
   // Use the embed/preview URL for Google Sheets
-  const documentUrl = "https://docs.google.com/spreadsheets/d/1WLXXWWpeeYakbXgkOntWbBL_szXefwI2uvXtMDWd4Ac/view"; // Updated URL
+  const documentUrl = "https://docs.google.com/spreadsheets/d/1WLXXWWpeeYakbXgkOntWbBL_szXefwI2uvXtMDWd4Ac/preview"; // Updated URL
 
   return (
     <div className="flex flex-col h-screen items-center mx-auto max-w-[500px]">

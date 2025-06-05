@@ -23,7 +23,7 @@ export default function ToolboxPage() {
   const toolButtons: ToolButtonInfo[] = [
     { name: 'Weather', path: '/toolbox/weather', icon: <ThunderstormOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
     { name: 'Coin Toss', path: '/toolbox/cointoss', icon: <Image src="/assets/coin-toss3.png" alt="Coin Toss" width={36} height={36} data-ai-hint="coin game" /> },
-    { name: 'Umpire Classroom', path: '/toolbox/umpireclassroom', icon: <SchoolOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
+    { name: 'Ump Class', path: '/toolbox/umpireclassroom', icon: <SchoolOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
     { name: 'Assignor Info', path: '/toolbox/assignor-information', icon: <BusinessCenterOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
   ];
 
@@ -75,7 +75,7 @@ export default function ToolboxPage() {
                   key={buttonInfo.name}
                   onClick={() => handleToolClick(buttonInfo.path)}
                   className="
-                    w-[100px] h-[100px]
+                    w-[120px] h-[120px]
                     bg-white text-black
                     border-2 border-primary
                     shadow-[0_0_8px_4px_rgba(0,0,0,.5)] rounded-md

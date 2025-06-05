@@ -7,7 +7,7 @@ import { NavbarLeagues } from '@/components/NavbarLeagues';
 
 export default function AybaRulesPage() {
   // Use the /view URL for Google Drive for better embed compatibility and potential search
-  const documentUrl = "https://docs.google.com/document/d/1-n3AlolkJHJ-uEOQ5sgy9Ab3oRJe3nNN/view";
+  const documentUrl = "https://docs.google.com/document/d/1-n3AlolkJHJ-uEOQ5sgy9Ab3oRJe3nNN/preview";
 
   return (
     <div className="flex flex-col h-screen items-center mx-auto max-w-[500px]">

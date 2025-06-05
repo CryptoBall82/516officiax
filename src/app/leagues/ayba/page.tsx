@@ -53,21 +53,21 @@ export default function AybaPage() {
               src="/assets/ayba_logo225.png" 
               alt="AYBA Logo"
               data-ai-hint="ayba logo baseball"
-              width={223}
-              height={175}
+              width={225}
+              height={176} 
               priority
               style={{
                 position: 'absolute',
                 top: '130px',
                 left: '50%',
                 transform: 'translateX(-50%)',
-                height: '175px',
-                width: 'auto',
+                width: '225px', 
+                height: 'auto',   
               }}
               onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                 const target = e.currentTarget;
                 target.onerror = null;
-                target.src = 'https://placehold.co/223x175/cccccc/000000?text=AYBA+Logo';
+                target.src = 'https://placehold.co/225x176/cccccc/000000?text=AYBA+Logo';
               }}
             />
           </div>
@@ -77,7 +77,7 @@ export default function AybaPage() {
               {buttons.map((buttonInfo) => (
                 <button
                   key={buttonInfo.name}
-                  className="w-[100px] h-[100px] bg-[rgba(255,255,255,1)] border-[2px] border-[rgba(204,0,0,1)] shadow-[0_0_8px_4px_rgba(0,0,0,.5)] rounded-md hover:scale-105 transition-transform relative"
+                  className="w-[225px] h-[225px] bg-[rgba(255,255,255,1)] border-[2px] border-[rgba(204,0,0,1)] shadow-[0_0_8px_4px_rgba(0,0,0,.5)] rounded-md hover:scale-105 transition-transform relative"
                   onClick={buttonInfo.action}
                 >
                   <div className="flex flex-col items-center justify-center h-full">
@@ -120,8 +120,8 @@ export default function AybaPage() {
               src="/assets/wills2x.png" 
               alt="Wills Park Parking Map"
               data-ai-hint="parking map aerial view"
-              width={390} 
-              height={390}
+              width={400} 
+              height={400}
               className="object-contain rounded-md"
               onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                 const target = e.currentTarget;
@@ -150,9 +150,9 @@ export default function AybaPage() {
             <Image
               src="/assets/webb22x.png" 
               alt="Webb Bridge Park Parking Map"
-              data-ai-hint="parking map aerial view baseball"
-              width={390} 
-              height={390}
+              data-ai-hint="parking map aerial view baseball park"
+              width={400} 
+              height={400}
               className="object-contain rounded-md"
               onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                 const target = e.currentTarget;

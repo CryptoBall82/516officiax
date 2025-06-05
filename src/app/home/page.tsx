@@ -72,7 +72,7 @@ export default function Home() {
             Dashboard
           </span>
           <Image
-            src="/assets/ox icon white 225.png" 
+            src="/assets/robo dog225.png" 
             alt="OfficiaX Icon"
             data-ai-hint="logo icon"
             width={225}
@@ -102,7 +102,7 @@ export default function Home() {
                   key={buttonInfo.name}
                   onClick={buttonInfo.action}
                   className={`
-                    w-[100px] h-[100px]
+                    w-[120px] h-[120px]
                     bg-white ${textColor}
                     border-2 border-primary
                     shadow-[0_0_8px_4px_rgba(0,0,0,.5)] rounded-md
