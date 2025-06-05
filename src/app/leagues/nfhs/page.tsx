@@ -41,19 +41,20 @@ export default function NFHSPage() {
               src="/assets/nfhs.png" // Corrected path
               alt="NFHS Logo"
               data-ai-hint="nfhs logo sports shield"
-              width={175}
-              height={175}
+              width={225}
+              height={225}
               style={{
                 position: 'absolute',
                 top: '130px', 
                 left: '50%',
                 transform: 'translateX(-50%)',
-                height: '175px',
+                height: '225px',
                 width: 'auto',
               }}
+              priority
               onError={(e: any) => {
                 e.currentTarget.onerror = null;
-                e.currentTarget.src = 'https://placehold.co/175x175.png'; 
+                e.currentTarget.src = 'https://placehold.co/225x225.png'; 
               }}
             />
           </div>
@@ -78,3 +79,4 @@ export default function NFHSPage() {
     </div>
   );
 }
+
