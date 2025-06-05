@@ -77,7 +77,7 @@ export default function AybaPage() {
               {buttons.map((buttonInfo) => (
                 <button
                   key={buttonInfo.name}
-                  className="w-[225px] h-[225px] bg-[rgba(255,255,255,1)] border-[2px] border-[rgba(204,0,0,1)] shadow-[0_0_8px_4px_rgba(0,0,0,.5)] rounded-md hover:scale-105 transition-transform relative"
+                  className="w-[120px] h-[120px] bg-[rgba(255,255,255,1)] border-[2px] border-[rgba(204,0,0,1)] shadow-[0_0_8px_4px_rgba(0,0,0,.5)] rounded-md hover:scale-105 transition-transform relative"
                   onClick={buttonInfo.action}
                 >
                   <div className="flex flex-col items-center justify-center h-full">
@@ -166,3 +166,4 @@ export default function AybaPage() {
     </div>
   );
 }
+
