@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import ThunderstormOutlinedIcon from '@mui/icons-material/ThunderstormOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
-import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
+import ReceiptLongOutlinedIcon from '@mui/icons-material/ReceiptLongOutlined';
 
 interface ToolButtonInfo {
   name: string;
@@ -24,7 +24,7 @@ export default function ToolboxPage() {
     { name: 'Weather', path: '/toolbox/weather', icon: <ThunderstormOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
     { name: 'Coin Toss', path: '/toolbox/cointoss', icon: <Image src="/assets/coin-toss3.png" alt="Coin Toss" width={36} height={36} data-ai-hint="coin game" /> },
     { name: 'Ump Class', path: '/toolbox/umpireclassroom', icon: <SchoolOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
-    { name: 'Assignor Info', path: '/toolbox/assignor-information', icon: <BusinessCenterOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
+    { name: 'Xspense', path: '/toolbox/assignor-information', icon: <ReceiptLongOutlinedIcon sx={{ fontSize: '36px', color: 'black' }} /> },
   ];
 
   const handleToolClick = (path: string) => {
